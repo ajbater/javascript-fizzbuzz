@@ -38,9 +38,15 @@ describe('FizzBuzz', function() {
   describe('When playing, says', function() {
 
     it('"Java" when a number is divisible by 3', function(){
-
        expect(fizzbuzz.says(3)).toEqual("Java")
+    });
 
+    it('"Buzz" when a number is divisible by 5', function() {
+      expect(fizzbuzz.says(5)).toEqual("Buzz")
+    });
+
+    it('"JavaBuzz" when a number is divisible by 15', function() {
+      expect(fizzbuzz.says(15)).toEqual("JavaBuzz")
     });
 
   });
