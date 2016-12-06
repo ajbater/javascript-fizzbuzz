@@ -22,7 +22,7 @@ FizzBuzz.prototype.says = function(number) {
     return "JavaBuzz";
   } else if (this.isDivisibleByFive(number)) {
     return "Buzz";
-  } else {
+  } else (this.isDivisibleByThree(number)) {
     return "Java";
   }
 };
